@@ -1,0 +1,166 @@
+1. WAP to Find max. from given 2 no. using ternary operator.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, max;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    max = (a > b) ? a : b;
+
+    printf("Maximum = %d", max);
+
+    return 0;
+}
+
+--------------------------------------------------------------
+2. WAP to Find min. from given 3 no. using nested if else.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a < b) {
+        if (a < c)
+            printf("Minimum = %d", a);
+        else
+            printf("Minimum = %d", c);
+    } else {
+        if (b < c)
+            printf("Minimum = %d", b);
+        else
+            printf("Minimum = %d", c);
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------
+3. WAP to Find max. from given 4 no. using nested if else.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d;
+
+    printf("Enter four numbers: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    if (a > b) {
+        if (a > c) {
+            if (a > d)
+                printf("Maximum = %d", a);
+            else
+                printf("Maximum = %d", d);
+        } else {
+            if (c > d)
+                printf("Maximum = %d", c);
+            else
+                printf("Maximum = %d", d);
+        }
+    } else {
+        if (b > c) {
+            if (b > d)
+                printf("Maximum = %d", b);
+            else
+                printf("Maximum = %d", d);
+        } else {
+            if (c > d)
+                printf("Maximum = %d", c);
+            else
+                printf("Maximum = %d", d);
+        }
+    }
+
+    return 0;
+}
+
+--------------------------------------------------------------
+4. WAP to Find min. from given 5 no. using nested if else.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d, e, min;
+
+    printf("Enter five numbers: ");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+
+    min = a;
+
+    if (b < min) min = b;
+    if (c < min) min = c;
+    if (d < min) min = d;
+    if (e < min) min = e;
+
+    printf("Minimum = %d", min);
+
+    return 0;
+}
+
+--------------------------------------------------------------
+5. WAP to Find max. from 3 using ternary operator.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c, max;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    max = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+
+    printf("Maximum = %d", max);
+
+    return 0;
+}
+
+--------------------------------------------------------------
+6. WAP to Find max. from 4 using ternary operator.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d, max;
+
+    printf("Enter four numbers: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    max = (a > b) ? a : b;
+    max = (max > c) ? max : c;
+    max = (max > d) ? max : d;
+
+    printf("Maximum = %d", max);
+
+    return 0;
+}
+
+--------------------------------------------------------------
+7. WAP to Find max. from 5 using ternary operator.
+
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d, e, max;
+
+    printf("Enter five numbers: ");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+
+    max = (a > b) ? a : b;
+    max = (max > c) ? max : c;
+    max = (max > d) ? max : d;
+    max = (max > e) ? max : e;
+
+    printf("Maximum = %d", max);
+
+    return 0;
+}
