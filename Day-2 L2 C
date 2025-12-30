@@ -1,0 +1,100 @@
+// 1. WAP to Find Area of Circle
+
+#include <stdio.h>
+
+int main() {
+    float r, area;
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    area = 3.14 * r * r;
+    printf("Area of Circle = %.2f", area);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------
+
+// 2. WAP to Find Area of Square
+
+#include <stdio.h>
+
+int main() {
+    float side, area;
+    printf("Enter side of square: ");
+    scanf("%f", &side);
+
+    area = side * side;
+    printf("Area of Square = %.2f", area);
+
+    return 0;
+}
+
+------------------------------------------------------------------------
+
+//3. WAP to Find Area of Rectangle
+
+#include <stdio.h>
+
+int main() {
+    float length, breadth, area;
+    printf("Enter length and breadth: ");
+    scanf("%f %f", &length, &breadth);
+
+    area = length * breadth;
+    printf("Area of Rectangle = %.2f", area);
+
+    return 0;
+}
+
+-----------------------------------------------------------------------
+
+//4. WAP to Find Area of Triangle
+
+#include <stdio.h>
+
+int main() {
+    float base, height, area;
+    printf("Enter base and height: ");
+    scanf("%f %f", &base, &height);
+
+    area = 0.5 * base * height;
+    printf("Area of Triangle = %.2f", area);
+
+    return 0;
+}
+
+-------------------------------------------------------------------------
+
+//5. WAP to Calculate Simple Interest
+
+#include <stdio.h>
+
+int main() {
+    float p, r, t, si;
+    printf("Enter Principal, Rate and Time: ");
+    scanf("%f %f %f", &p, &r, &t);
+
+    si = (p * r * t) / 100;
+    printf("Simple Interest = %.2f", si);
+
+    return 0;
+}
+
+-------------------------------------------------------------------------
+
+//6. WAP to Find Perimeter of Circle
+
+#include <stdio.h>
+
+int main() {
+    float r, perimeter;
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    perimeter = 2 * 3.14 * r;
+    printf("Perimeter of Circle = %.2f", perimeter);
+
+    return 0;
+}
+
