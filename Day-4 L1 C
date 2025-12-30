@@ -1,0 +1,91 @@
+//1. WAP TO CHECK NUMBER IS POSITIVE, NEGATIVE OR NEUTRAL USING NESTED IF ELSE.
+
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num >= 0) {
+        if (num == 0) {
+            printf("Number is Neutral (Zero)");
+        } else {
+            printf("Number is Positive");
+        }
+    } else {
+        printf("Number is Negative");
+    }
+
+    return 0;
+}
+
+
+------------------------------------------------------------------------------------------
+
+//2. WAP TO CHECK USER IS ELIGIBLE FOR VOTE OR NOT.
+
+#include <stdio.h>
+
+int main() {
+    int age;
+
+    printf("Enter age: ");
+    scanf("%d", &age);
+
+    if (age >= 18) {
+        printf("You are eligible for voting");
+    } else {
+        printf("You are not eligible for voting");
+    }
+
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------
+
+//3. WAP to Find min. no. from given 2 no. using if else.
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    if (a < b) {
+        printf("Minimum number = %d", a);
+    } else {
+        printf("Minimum number = %d", b);
+    }
+
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------
+
+//4. WAP to Find if a given no. is neutral or not using ladder if else.
+
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num > 0) {
+        printf("Number is Positive (Not Neutral)");
+    }
+    else if (num < 0) {
+        printf("Number is Negative (Not Neutral)");
+    }
+    else {
+        printf("Number is Neutral (Zero)");
+    }
+
+    return 0;
+}
