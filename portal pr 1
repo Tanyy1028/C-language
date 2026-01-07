@@ -1,71 +1,57 @@
 //  Q.1 Temperature Converter
 
-#include <stdio.h>
-
-int main() {
-    float celsius, fahrenheit;
-
-    printf("Enter temperature in Celsius: ");
-    scanf("%f", &celsius);
-
-    fahrenheit = (9.0 / 5.0) * celsius + 32;
-
-    printf("Temperature in Fahrenheit: %.1f", fahrenheit);
-
-    return 0;
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int celsius;
+	printf("enter tempreture in celsius = ");
+	scanf("%d",&celsius);
+	float fahrenheit=(1.8*celsius)+32;
+	printf("celsius to fahrenheit convert value is %f",fahrenheit);
 }
 
 ---------------------------------------------------------------------------------
 
 //  Q.2 Gross Salary Calculator
 
-
-#include <stdio.h>
-
-int main() {
-    float baseSalary, hra, da, ta, grossSalary;
-
-    printf("Enter Base Salary: ");
-    scanf("%f", &baseSalary);
-
-    printf("Enter HRA percentage: ");
-    scanf("%f", &hra);
-
-    printf("Enter DA percentage: ");
-    scanf("%f", &da);
-
-    printf("Enter TA percentage: ");
-    scanf("%f", &ta);
-
-    grossSalary = baseSalary +
-                  (baseSalary * hra / 100) +
-                  (baseSalary * da / 100) +
-                  (baseSalary * ta / 100);
-
-    printf("Gross Salary: Rs. %.0f", grossSalary);
-
-    return 0;
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int salary,hra,da,ta;
+	printf("enter salary = ");
+	scanf("%d",&salary);
+	printf("enter HRA = ");
+	scanf("%d",&hra);
+	printf("enter DA = ");
+	scanf("%d",&da);
+	printf("enter TA = ");
+	scanf("%d",&ta);
+	
+	int HRA=(salary*hra)/100;
+	int DA=(salary*da)/100;
+	int TA=(salary*ta)/100;
+	
+	int gross_salary=salary+HRA+DA+TA;
+	
+	printf("gross salary = %d",gross_salary);
 }
 
 -------------------------------------------------------------------------------------
 
 // Q.3 Triangle Angle Finder
 
-#include <stdio.h>
-
-int main() {
-    int angle1, angle2, angle3;
-    
-    printf("Enter first angle: ");
-    scanf("%d", &angle1);
-
-    printf("Enter second angle: ");
-    scanf("%d", &angle2);
-
-    angle3 = 180 - (angle1 + angle2);
-
-    printf("Third angle: %d", angle3);
-
-    return 0;
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c;
+	printf("enter first angle = ");
+	scanf("%d",&a);
+	printf("enter second angle = ");
+	scanf("%d",&b);
+	c=180-(a+b);
+	printf("third angle is %d",c);
 }
 
