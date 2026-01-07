@@ -1,0 +1,50 @@
+// Q.1 Alphabet Skipper
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a='a';
+	do{
+		printf("%c,",a);
+		a+=4;
+	}while(a<='z');
+	
+}
+-----------------------------------------
+
+// Q.2 Digit Counter
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n,sum=0;
+	printf("enter the number = ");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		n=n/10;
+		sum+=1;
+	}
+	printf("total number of digits = %d",sum);
+}
+
+--------------------------------------------------
+
+// Q.3 Digit Addition
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n,ld;
+	printf("enter the number = ");
+	scanf("%d",&n);
+	ld=n%10;
+	while(n>9)
+	{
+		n=n/10;
+	}
+	printf("sum of first and last digit is %d",ld+n);
+}
