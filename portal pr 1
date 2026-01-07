@@ -1,0 +1,71 @@
+//  Q.1 Temperature Converter
+
+#include <stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (9.0 / 5.0) * celsius + 32;
+
+    printf("Temperature in Fahrenheit: %.1f", fahrenheit);
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------
+
+//  Q.2 Gross Salary Calculator
+
+
+#include <stdio.h>
+
+int main() {
+    float baseSalary, hra, da, ta, grossSalary;
+
+    printf("Enter Base Salary: ");
+    scanf("%f", &baseSalary);
+
+    printf("Enter HRA percentage: ");
+    scanf("%f", &hra);
+
+    printf("Enter DA percentage: ");
+    scanf("%f", &da);
+
+    printf("Enter TA percentage: ");
+    scanf("%f", &ta);
+
+    grossSalary = baseSalary +
+                  (baseSalary * hra / 100) +
+                  (baseSalary * da / 100) +
+                  (baseSalary * ta / 100);
+
+    printf("Gross Salary: Rs. %.0f", grossSalary);
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------
+
+// Q.3 Triangle Angle Finder
+
+#include <stdio.h>
+
+int main() {
+    int angle1, angle2, angle3;
+    
+    printf("Enter first angle: ");
+    scanf("%d", &angle1);
+
+    printf("Enter second angle: ");
+    scanf("%d", &angle2);
+
+    angle3 = 180 - (angle1 + angle2);
+
+    printf("Third angle: %d", angle3);
+
+    return 0;
+}
+
